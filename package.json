@@ -1,0 +1,59 @@
+
+{
+  "name": "p2jsvc",
+  "_id": "p2jsvc@0.1.0",
+  "version": "0.1.0",
+  "description": "A RESTful web service adaptor for pdf2json, built with restify and nodejs.",
+  "keywords": [
+    "pdf",
+    "pdf parser",
+    "convert pdf to json",
+    "server side PDF parser",
+    "PDF binary to text in web service",
+    "RESTful service for pdf2json"
+  ],
+  "author": {
+    "name": "Modesty Zhang",
+    "email": "modestyz@hotmail.com",
+    "url": "http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=62372"
+  },
+  "homepage": "https://github.com/modesty/p2jsvc",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/modesty/p2jsvc.git"
+  },
+  "main": "./index.js",
+  "scripts": {
+
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+      "pdf2json" : ">=0.1.21",
+      "underscore": ">=1.4.2",
+      "restify": ">=2.3.5"
+  },
+  "devDependencies": {},
+  "maintainers": [
+    {
+        "name": "Modesty Zhang",
+        "email": "modestyz@hotmail.com",
+        "url": "http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=62372"
+    }
+  ],
+  "contributors": [
+  ],
+  "bugs": {
+    "email": "modestyz@hotmail.com",
+    "url": "http://github.com/modesty/p2jsvc/issues"
+  },
+  "licenses": [
+    {
+      "type": "LGPL",
+      "url": "http://www.gnu.org/licenses/lgpl.html"
+    }
+  ],
+  "readme": "https://github.com/modesty/p2jsvc/blob/master/readme.md",
+  "_from": "p2jsvc"
+}
