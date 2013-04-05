@@ -19,7 +19,7 @@ You should see '[time_stamp] - PDFFORMServer1 listening at http://0.0.0.0:8001' 
 
 ##Service Status Check
 
-                curl -isv http://0.0.0.0:8001/pdfform/status
+                curl -isv http://0.0.0.0:8001/p2jsvc/status
 
 Response should include something like this:
 
@@ -28,12 +28,22 @@ Response should include something like this:
 
 ##Test with GET
 
-                curl -isv http://0.0.0.0:8001/pdfform/data/xfa_1040ez
-                curl -isv http://0.0.0.0:8001/pdfform/data/xfa_1040a
-                curl -isv http://0.0.0.0:8001/pdfform/data/xfa_1040
+                curl -isv http://0.0.0.0:8001/p2jsvc/data/xfa_1040ez
+                curl -isv http://0.0.0.0:8001/p2jsvc/data/xfa_1040a
+                curl -isv http://0.0.0.0:8001/p2jsvc/data/xfa_1040
 
 ##Test with POST
 
-                curl -isv -H "Content-Type: application/json" -X POST -d '{"folderName":"data", "pdfId":"xfa_1040ez"}' http://0.0.0.0:8001/pdfform
-                curl -isv -H "Content-Type: application/json" -X POST -d '{"folderName":"data", "pdfId":"xfa_1040a"}' http://0.0.0.0:8001/pdfform
-                curl -isv -H "Content-Type: application/json" -X POST -d '{"folderName":"data", "pdfId":"xfa_1040"}' http://0.0.0.0:8001/pdfform
+                curl -isv -H "Content-Type: application/json" -X POST -d '{"folderName":"data", "pdfId":"xfa_1040ez"}' http://0.0.0.0:8001/p2jsvc
+                curl -isv -H "Content-Type: application/json" -X POST -d '{"folderName":"data", "pdfId":"xfa_1040a"}' http://0.0.0.0:8001/p2jsvc
+                curl -isv -H "Content-Type: application/json" -X POST -d '{"folderName":"data", "pdfId":"xfa_1040"}' http://0.0.0.0:8001/p2jsvc
+
+##Concurrency Benchmark Test
+
+                ab -n 10 -c 10 http://0.0.0.0:8001/p2jsvc/data/xfa_1040ez
+                ab -n 10 -c 10 http://0.0.0.0:8001/p2jsvc/data/xfa_1040a
+                ab -n 10 -c 10 http://0.0.0.0:8001/p2jsvc/data/xfa_1040
+
+##More Info
+
+[Restful Web Service for PDF2JSON](http://www.codeproject.com/Articles/573297/Restful-Web-Service-for-PDF2JSON)
