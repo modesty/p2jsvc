@@ -1,8 +1,8 @@
 
 {
   "name": "p2jsvc",
-  "_id": "p2jsvc@0.1.1",
-  "version": "0.1.1",
+  "_id": "p2jsvc@0.1.2",
+  "version": "0.1.2",
   "description": "A RESTful web service adaptor for pdf2json, built with restify and nodejs.",
   "keywords": [
     "pdf",
@@ -30,7 +30,7 @@
     "node": ">=0.8"
   },
   "dependencies": {
-      "pdf2json" : ">=0.1.21",
+      "pdf2json" : ">=0.2.0",
       "underscore": ">=1.4.2"
   },
   "devDependencies": {},
