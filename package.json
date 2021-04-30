@@ -24,7 +24,7 @@
   },
   "main": "./index.js",
   "scripts": {
-    "preinstall": "sudo npm i -g restify"
+    "preinstall": "npm i -g restify"
   },
   "engines": {
     "node": ">=0.8"
