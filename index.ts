@@ -9,5 +9,5 @@
 //curl -isv -H "Content-Type: application/json" -X POST -d '{"folderName":"data", "pdfId":"xfa_1040"}' http://0.0.0.0:8001/p2jsvc
 
 'use strict';
-var service = require("./lib/service");
-service.start();
+import {PDFFORMService} from './lib/service';
+(new PDFFORMService()).start();
