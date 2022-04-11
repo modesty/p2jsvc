@@ -1,4 +1,3 @@
-
 {
   "name": "p2jsvc",
   "_id": "p2jsvc@0.1.2",
@@ -24,25 +23,24 @@
   },
   "main": "./index.js",
   "scripts": {
-    "preinstall": "sudo npm i -g restify"
+    "path": "PATH=$(npm bin):$PATH"
   },
   "engines": {
     "node": ">=0.8"
   },
   "dependencies": {
-      "pdf2json" : ">=0.2.0",
-      "underscore": ">=1.4.2"
+    "npmlog": "^6.0.1",
+    "pdf2json": ">=0.2.0",
+    "restify": "^8.6.1"
   },
-  "devDependencies": {},
   "maintainers": [
     {
-        "name": "Modesty Zhang",
-        "email": "modestyz@hotmail.com",
-        "url": "http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=62372"
+      "name": "Modesty Zhang",
+      "email": "modestyz@hotmail.com",
+      "url": "http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=62372"
     }
   ],
-  "contributors": [
-  ],
+  "contributors": [],
   "bugs": {
     "email": "modestyz@hotmail.com",
     "url": "http://github.com/modesty/p2jsvc/issues"
@@ -54,5 +52,10 @@
     }
   ],
   "readme": "https://github.com/modesty/p2jsvc/blob/master/readme.md",
-  "_from": "p2jsvc"
+  "_from": "p2jsvc",
+  "devDependencies": {
+    "@types/npmlog": "^4.1.4",
+    "@types/restify": "^8.5.4",
+    "typescript": "^4.6.3"
+  }
 }

@@ -47,3 +47,11 @@ Response should include something like this:
 ##More Info
 
 [Restful Web Service for PDF2JSON](http://www.codeproject.com/Articles/573297/Restful-Web-Service-for-PDF2JSON)
+
+
+## typescript
+
+```
+npx tsc
+node dist/index.js
+```
